@@ -153,18 +153,41 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t border-zinc-900 py-8 bg-zinc-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <div className="flex items-center gap-2">
-              <div className="flex h-5 w-5 items-center justify-center rounded bg-zinc-100 text-zinc-950 font-mono text-xs font-bold">
-                LD
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row text-center sm:text-left">
+            <div className="flex flex-col gap-1 items-center sm:items-start">
+              <div className="flex items-center gap-2">
+                <div className="flex h-5 w-5 items-center justify-center rounded bg-zinc-100 text-zinc-950 font-mono text-xs font-bold">
+                  LD
+                </div>
+                <span className="text-xs font-semibold text-zinc-300">
+                  LeadDesk Mini
+                </span>
               </div>
-              <span className="text-xs font-semibold text-zinc-300">
-                LeadDesk Mini
-              </span>
+              <p className="text-xs text-zinc-400 mt-1">
+                <a
+                  href="https://digitalheroesco.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-zinc-200 transition-colors underline decoration-zinc-700 underline-offset-4 font-medium"
+                >
+                  Built for Digital Heroes Training Task
+                </a>
+              </p>
             </div>
-            <p className="text-xs text-zinc-500 font-mono">
-              © {new Date().getFullYear()} LeadDesk. All rights reserved.
-            </p>
+
+            <div className="flex flex-col items-center sm:items-end gap-1 text-xs text-zinc-500">
+              <a
+                href="https://github.com/harsh3224h/lead-desk-mini"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-zinc-300 transition-colors font-mono"
+              >
+                https://github.com/harsh3224h/lead-desk-mini
+              </a>
+              <p className="font-mono text-[11px] text-zinc-600">
+                © {new Date().getFullYear()} LeadDesk. All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
